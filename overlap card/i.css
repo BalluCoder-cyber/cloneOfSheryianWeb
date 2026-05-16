@@ -1,0 +1,48 @@
+.card-stack {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Bottom-most card */
+.card1 {
+    background: #6c63ff;
+    top: 20px;
+    /* shifted down */
+    left: 0;
+    /* aligned horizontally */
+    z-index: 1;
+}
+
+/* Middle card */
+.card2 {
+    background: #ff6f61;
+    top: 10px;
+    /* slightly less down */
+    left: 0;
+    z-index: 2;
+}
+
+/* Top card (focus) */
+.card3 {
+    background: #2ecc71;
+    top: 0;
+    /* no offset */
+    left: 0;
+    z-index: 3;
+}
