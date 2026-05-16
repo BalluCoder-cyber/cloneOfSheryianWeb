@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="form-container">
+        <form>
+            <h2>New Call</h2>
+            <label>Img Url</label>
+
+            <input type="text" placeholder="https://example.com/photo.jpg">
+
+            <label>Full Name </label>
+
+            <input type="text" placeholder="Enter full name">
+
+            <label>Home Town </label>
+
+            <input type="text" placeholder="Enter home town">
+
+            <label>Purpose</label>
+
+            <input type="text" placeholder="Quick appointment now ">
+
+            <label>Category</label>
+
+            <div class="category-box">
+                <label class="checkbox check1">
+                    <input type="radio" name="category" value="emergency">
+                    <span>Emergency</span>
+                    <br>
+                </label>
+                <label class="checkbox check2">
+                    <input type="radio" name="category" value="important">
+                    <span>Important</span>
+
+                </label>
+                <label class="checkbox check3">
+                    <input type="radio" name="category" value="urgent">
+                    <span>Urgent</span>
+
+                </label>
+                <label class="checkbox check4">
+                    <input type="radio" name="category" value="no-rush">
+                    <span>No_Rush</span>
+                </label>
+            </div>
+            <button class="btn create">Create Note </button>
+            <button class="btn close">Close</button>
+
+        </form>
+
+    </div>
+    <div class="note-container">
+        <div class="left-icons">
+            <!-- <button><i class="ri-add-line"></i></button>
+            <button><i class="ri-arrow-up-line"></i></button>
+            <button><i class="ri-arrow-down-line"></i></button> -->
+
+        </div>
+        <div class="stack">
+            <div class="card"></div>
+            <div class="card"></div>
+
+
+
+            <div class="card"></div>
+
+        </div>
+        <div class="right-colors">
+            <span class="dot black"></span>
+            <span class="dot purple"></span>
+            <span class="dot orange"></span>
+            <span class="dot teal"></span>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
